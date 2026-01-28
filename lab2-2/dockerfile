@@ -1,0 +1,7 @@
+FROM golang:1.25-alpine
+
+COPY main.go .
+
+RUN go build -o hello main.go
+
+CMD ["./hello"] 
